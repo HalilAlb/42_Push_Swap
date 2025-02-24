@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 00:58:07 by malbayra          #+#    #+#             */
-/*   Updated: 2024/10/17 02:32:39 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/24 18:39:30 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ static void	make_job(char *str, size_t nb, int *level)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	size_t	i;
 	int		level;
 	long	nb;
 
@@ -58,7 +57,6 @@ char	*ft_itoa(int n)
 	str = (char *)malloc(sizeof(char) * (count_digit_and_is_negative(nb) + 1));
 	if (!str)
 		return (NULL);
-	i = 0;
 	level = 0;
 	if (n < 0)
 	{

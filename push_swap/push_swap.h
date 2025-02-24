@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/24 16:46:15 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/24 18:45:39 by malbayra         ###   ########.fr       */
+/*   Created: 2025/02/24 16:51:09 by malbayra          #+#    #+#             */
+/*   Updated: 2025/02/24 18:36:58 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
+# include "libft/libft.h"
+# include "libft/ft_printf/ft_printf.h"
 
-int main(int ac,char **av)
-{
-    
-     
-}
+#endif
