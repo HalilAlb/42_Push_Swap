@@ -6,7 +6,15 @@ PRINTF = libft/ft_printf/libftprintf.a
 PRINTFDIR = libft/ft_printf
 NAME = push_swap
 
-SRCS = main.c
+SRCS = main.c \
+		action.c \
+		error_free.c \
+		list_utils.c \
+		normal.c \
+		sorting.c \
+		stack_init.c \
+		tiny_sort.c \
+
 
 OBJS = $(SRCS:.c=.o)
 

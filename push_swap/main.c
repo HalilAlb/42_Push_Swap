@@ -6,34 +6,47 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 10:43:09 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/25 12:13:08 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/27 16:20:39 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void check_args(int ac, char **av)
+static int	arg_counter(char **av)
 {
-    int i;
-    int j;
-    
-    i = 0;
-    if(ac < 2)
-           write(10, "Erro\n", 6);
-    while(++i < ac)
-    {
-        j = 0;
-        while(av[i][j])
-        {
-            if(!ft_isdigit(av[i][j]) && av[i][j] != ' ')
-                write(2, "Err\n", 6);
-            j++;
-        }
-    }
+	int	counter;
+
+	counter = 0;
+	while (*av++)
+		counter++;
+	return (counter + 1);
 }
 
-int main(int ac,char **av)
+int	main(int ac, char **av)
 {
-    check_args(ac, av);
-    
+	t_stack	*a;
+	t_stack	*b;
+	int		size;
+
+	a = NULL;
+	b = NULL;
+	size = ac;
+	if (ac == 1 || (ac == 2 && !av[1][0]))
+		return (1);
+	else if (ac == 2)
+	{
+		av = ft_split(av[1], ' ');
+		if (av == NULL)
+			return (1);
+		ac = arg_counter(av);
+	}
+	else
+		av += 1;
+	stack_init(&a, av, ac, size == 2);
+	if(!stack_sorted(a))
+		radix_sort(&a,&b,stack_len(a));
+	free_stack(&a);
+	if(stack_len(b) != 0)
+		free_stack(&b);
+	return(0);
 }

@@ -6,13 +6,14 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:11:26 by malbayra          #+#    #+#             */
-/*   Updated: 2024/10/28 13:43:36 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:13:01 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <limits.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -57,6 +58,10 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_free_split(char **_tab);
+int					ft_countwords(char const *str, char c);
+long				ft_atol(char *string);
+int					ft_iswhitespace(char c);
 
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);
