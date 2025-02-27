@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:01:06 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/27 17:01:29 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:16:34 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	operations(t_stack **a, t_stack **b, int bit_index)
 
 void	radix_sort(t_stack **a, t_stack **b, int size)
 {
-	int index;
+	int	index;
 
 	index = -1;
 	if (size == 2)

@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:32:51 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/27 16:21:40 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:16:16 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	error_free(t_stack **a, char **argv, int flag_argc_2, long *numbers)
 		free_matrix(argv);
 	exit(EXIT_FAILURE);
 }
+
 int	error_syntax(char *str_nbr)
 {
 	int	flag;

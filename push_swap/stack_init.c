@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:29:17 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/27 18:01:37 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:15:27 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ void	stack_init(t_stack **a, char **argv, int argc, int flag_argc_2)
 	if (flag_argc_2)
 		free_matrix(argv);
 }
-
 
 void	user_message(char *string)
 {
