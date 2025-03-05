@@ -70,25 +70,25 @@ void	stack_init(t_stack **a, char **argv, int argc, int flag_argc_2)
 void	user_message(char *string)
 {
 	if (!ft_strncmp(string, "pa", 2))
-		write(1, PA, ft_strlen(PA));
+		ft_printf(PA);
 	else if (!ft_strncmp(string, "pb", 2))
-		write(1, PB, ft_strlen(PB));
+		ft_printf(PB);
 	else if (!ft_strncmp(string, "rra", 3))
-		write(1, RRA, ft_strlen(RRA));
+		ft_printf(RRA);
 	else if (!ft_strncmp(string, "rrb", 3))
-		write(1, RRB, ft_strlen(RRB));
+		ft_printf(RRB);
 	else if (!ft_strncmp(string, "rrr", 3))
-		write(1, RRR, ft_strlen(RRR));
+		ft_printf(RRR);
 	else if (!ft_strncmp(string, "ra", 2))
-		write(1, RA, ft_strlen(RA));
+		ft_printf(RA);
 	else if (!ft_strncmp(string, "rb", 2))
-		write(1, RB, ft_strlen(RB));
+		ft_printf(RB);
 	else if (!ft_strncmp(string, "rr", 2))
-		write(1, RR, ft_strlen(RR));
+		ft_printf(RR);
 	else if (!ft_strncmp(string, "sa", 2))
-		write(1, SA, ft_strlen(SA));
+		ft_printf(SA);
 	else if (!ft_strncmp(string, "sb", 2))
-		write(1, SB, ft_strlen(SB));
+		ft_printf(SB);
 	else if (!ft_strncmp(string, "ss", 2))
-		write(1, SS, ft_strlen(SS));
+		ft_printf(SS);
 }
