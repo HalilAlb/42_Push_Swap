@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:51:09 by malbayra          #+#    #+#             */
-/*   Updated: 2025/03/11 12:50:47 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/03/17 02:17:47 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,10 @@ typedef struct s_stack
 # define RR "rr\n"
 
 # define RRA "rra\n"
-# define RRB "rrb\n"
 # define RRR "rrr\n"
 
 # define SA "sa\n"
 # define SB "sb\n"
-# define SS "ss\n"
 
 # define SYNTAX "Error\n"
 # define DUPLICATE "Error\n"

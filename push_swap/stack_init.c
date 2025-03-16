@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 15:29:17 by malbayra          #+#    #+#             */
-/*   Updated: 2025/03/06 02:31:15 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/03/17 02:17:37 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,6 @@ void	user_message(char *string)
 		ft_printf(PB);
 	else if (!ft_strncmp(string, "rra", 3))
 		ft_printf(RRA);
-	else if (!ft_strncmp(string, "rrb", 3))
-		ft_printf(RRB);
 	else if (!ft_strncmp(string, "rrr", 3))
 		ft_printf(RRR);
 	else if (!ft_strncmp(string, "ra", 2))
@@ -89,6 +87,4 @@ void	user_message(char *string)
 		ft_printf(SA);
 	else if (!ft_strncmp(string, "sb", 2))
 		ft_printf(SB);
-	else if (!ft_strncmp(string, "ss", 2))
-		ft_printf(SS);
 }
