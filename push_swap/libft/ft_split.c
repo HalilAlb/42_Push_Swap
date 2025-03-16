@@ -6,13 +6,13 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 23:41:37 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/27 13:26:09 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/03/01 22:16:33 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_free_split(char **_tab)
+static void	ft_free_split(char **_tab)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ void	ft_free_split(char **_tab)
 	}
 }
 
-int	ft_countwords(char const *str, char c)
+static int	ft_countwords(char const *str, char c)
 {
 	int	count;
 	int	i;

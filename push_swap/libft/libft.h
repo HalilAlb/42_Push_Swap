@@ -6,7 +6,7 @@
 /*   By: malbayra <malbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:11:26 by malbayra          #+#    #+#             */
-/*   Updated: 2025/02/27 18:13:01 by malbayra         ###   ########.fr       */
+/*   Updated: 2025/03/01 22:16:48 by malbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,6 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-void				ft_free_split(char **_tab);
-int					ft_countwords(char const *str, char c);
 long				ft_atol(char *string);
 int					ft_iswhitespace(char c);
 
