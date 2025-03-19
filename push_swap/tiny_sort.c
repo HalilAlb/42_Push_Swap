@@ -73,6 +73,8 @@ void	sort_five(t_stack **a, t_stack **b)
 {
 	make_stack_three(a, b);
 	sort_three(a);
+	if (!stack_sorted(*a))
+		sort_three(a);
 	if (stack_len(*b) == 2 && (*b)->value < (*b)->next->value)
 		swap(b, 0, "sb");
 	push(a, b, "pa");
