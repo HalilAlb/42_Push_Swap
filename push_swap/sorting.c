@@ -47,7 +47,7 @@ void	radix_sort(t_stack **a, t_stack **b, int size)
 		swap(a, 0, "sa");
 	else if (size == 3)
 		sort_three(a);
-	else if (size == 4 || size < 6)
+	else if (size == 4 || size == 5)
 		sort_five(a, b);
 	else
 	{
